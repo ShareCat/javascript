@@ -10,7 +10,7 @@
 <p id="demo1"></p>
 <p id="demo2"></p>
 <script>
-var x = "John";              // x是一个字符串
+var x = "John";              // x是一个字符串，原始值字符串，如 "John", 没有属性和方法(因为他们不是对象)。原始值可以使用 JavaScript 的属性和方法，因为 JavaScript 在执行方法和属性时可以把原始值当作对象。
 var y = new String("John");  // y是一个对象，不要创建 String 对象。它会拖慢执行速度，并可能产生其他副作用：
 document.getElementById("demo").innerHTML = "typeof x: " + typeof x + ", " + "typeof y: " + typeof y;
 document.getElementById("demo1").innerHTML = x==y;
